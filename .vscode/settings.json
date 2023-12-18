@@ -1,0 +1,4 @@
+{
+    "C_Cpp.errorSquiggles": "enabled",
+    "verilog.linting.linter": "iverilog"
+}

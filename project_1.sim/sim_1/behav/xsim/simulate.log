@@ -1,0 +1,45 @@
+Time resolution is 1 ps
+NO DEPENDENCY ANDI 	failed!
+
+NO DEPENDENCY NOR  	failed!
+
+NO DEPENDENCY SLT  	failed!
+
+NO DEPENDENCY SLL  	failed!
+
+NO DEPENDENCY SRL  	success!
+
+NO DEPENDENCY SRA  	failed!
+
+NO DEPENDENCY XOR  	success!
+
+NO DEPENDENCY MULT 	failed!
+
+NO DEPENDENCY DIV  	failed!
+
+ANDI No Forwarding     failed!
+
+Forward EX/MEM to EX B failed!
+
+Forward MEM/WB to EX A	failed!
+
+SLL  No Forwarding		failed!
+
+Forward EX/MEM to EX A	failed!
+
+Forward MEM/WB to EX A	failed!
+
+XOR  No Forwarding		failed!
+
+MULT No Forwarding		failed!
+
+Forward MEM/WB to EX B	success!
+
+DATA HAZARD RS DEPENDENCY  failed!
+
+DATA HAZARD RT DEPENDENCY	failed!
+
+CONTROL HAZARD BRANCH	failed!
+
+CONTROL HAZARD JUMP	failed!
+

@@ -1,0 +1,24 @@
+0.7
+2020.2
+May  7 2023
+15:24:31
+C:/Users/Andy/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1683266558,verilog,,,,glbl,,,,,,,,
+C:/Users/Andy/project_1/project_1.srcs/sim_1/imports/Lab4_file_uploaded 3/tb_mips_32.v,1701227586,verilog,,,,tb_mips_32,,,,,,,,
+C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/ALU.v,1701919214,verilog,,C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/ALUControl.v,,ALU,,,,,,,,
+C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/ALUControl.v,1701130369,verilog,,C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/EX_Forwarding_unit.v,,ALUControl,,,,,,,,
+C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/EX_Forwarding_unit.v,1701920102,verilog,,C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/EX_pipe_stage.v,,EX_Forwarding_unit,,,,,,,,
+C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/EX_pipe_stage.v,1701241591,verilog,,C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/Hazard_detection.v,,EX_pipe_stage,,,,,,,,
+C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/Hazard_detection.v,1701243067,verilog,,C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/ID_pipe_stage.v,,Hazard_detection,,,,,,,,
+C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/ID_pipe_stage.v,1701241681,verilog,,C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/IF_pipe_stage.v,,ID_pipe_stage,,,,,,,,
+C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/IF_pipe_stage.v,1701242792,verilog,,C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/control.v,,IF_pipe_stage,,,,,,,,
+C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/control.v,1636224432,verilog,,C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/data_memory.v,,control,,,,,,,,
+C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/data_memory.v,1701227822,verilog,,C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/instruction_mem.v,,data_memory,,,,,,,,
+C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/instruction_mem.v,1700960460,verilog,,C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mips_32.v,,instruction_mem,,,,,,,,
+C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mips_32.v,1701239893,verilog,,C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mux.v,,mips_32,,,,,,,,
+C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mux.v,1636224502,verilog,,C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mux4.v,,mux2,,,,,,,,
+,,,,C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/pipe_reg.v,,mux4,,,,,,,,
+C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/pipe_reg.v,1701080697,verilog,,C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/pipe_reg_en.v,,pipe_reg,,,,,,,,
+C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/pipe_reg_en.v,1636224518,verilog,,C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/register_file.v,,pipe_reg_en,,,,,,,,
+C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/register_file.v,1636224536,verilog,,C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/sign_extend.v,,register_file,,,,,,,,
+C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/sign_extend.v,1636224544,verilog,,C:/Users/Andy/project_1/project_1.srcs/sim_1/imports/Lab4_file_uploaded 3/tb_mips_32.v,,sign_extend,,,,,,,,
+C:/Users/Andy/project_1/project_1.srcs/sources_1/new/mux3.v,1701130516,verilog,,C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/pipe_reg.v,,mux3,,,,,,,,

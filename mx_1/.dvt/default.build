@@ -1,0 +1,8 @@
++define+COMPILE_BIST
+
+-f .dvt/vhdl.f
+-f .dvt/vlog.f
+
+-top top
+-top tb_jop
+-top sc_i2c

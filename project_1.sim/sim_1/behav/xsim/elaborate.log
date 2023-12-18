@@ -1,0 +1,40 @@
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_mips_32_behav xil_defaultlib.tb_mips_32 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'b' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/ID_pipe_stage.v:62]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mux2(mux_width=10)
+Compiling module xil_defaultlib.instruction_mem
+Compiling module xil_defaultlib.IF_pipe_stage
+Compiling module xil_defaultlib.pipe_reg_en(WIDTH=10)
+Compiling module xil_defaultlib.pipe_reg_en(WIDTH=32)
+Compiling module xil_defaultlib.sign_extend
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.mux2(mux_width=1)
+Compiling module xil_defaultlib.mux2(mux_width=2)
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.mux2(mux_width=5)
+Compiling module xil_defaultlib.ID_pipe_stage
+Compiling module xil_defaultlib.pipe_reg(WIDTH=32)
+Compiling module xil_defaultlib.pipe_reg(WIDTH=5)
+Compiling module xil_defaultlib.pipe_reg(WIDTH=1)
+Compiling module xil_defaultlib.pipe_reg(WIDTH=2)
+Compiling module xil_defaultlib.Hazard_detection
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.mux4
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.EX_pipe_stage
+Compiling module xil_defaultlib.EX_Forwarding_unit
+Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.mips_32
+Compiling module xil_defaultlib.tb_mips_32
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_mips_32_behav

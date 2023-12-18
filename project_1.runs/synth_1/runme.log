@@ -1,0 +1,448 @@
+
+*** Running vivado
+    with args -log mips_32.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mips_32.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source mips_32.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 454.359 ; gain = 159.883
+Command: synth_design -top mips_32 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24084
+INFO: [Synth 8-11241] undeclared symbol 'eq_test_signal', assumed default net type 'wire' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/ID_pipe_stage.v:109]
+CRITICAL WARNING: [Synth 8-9339] data object 'ex_mem_reg_write' is already declared [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mips_32.v:51]
+INFO: [Synth 8-6826] previous declaration of 'ex_mem_reg_write' is from here [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mips_32.v:46]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'ex_mem_reg_write' is ignored [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mips_32.v:51]
+INFO: [Synth 8-11241] undeclared symbol 'mem_wb_write', assumed default net type 'wire' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mips_32.v:193]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1268.945 ; gain = 410.176
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mips_32' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mips_32.v:4]
+INFO: [Synth 8-6157] synthesizing module 'IF_pipe_stage' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/IF_pipe_stage.v:4]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mux.v:3]
+	Parameter mux_width bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (0#1) [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mux.v:3]
+INFO: [Synth 8-6157] synthesizing module 'instruction_mem' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/instruction_mem.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_mem' (0#1) [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/instruction_mem.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IF_pipe_stage' (0#1) [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/IF_pipe_stage.v:4]
+INFO: [Synth 8-6157] synthesizing module 'pipe_reg_en' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/pipe_reg_en.v:3]
+	Parameter WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pipe_reg_en' (0#1) [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/pipe_reg_en.v:3]
+INFO: [Synth 8-6157] synthesizing module 'pipe_reg_en__parameterized0' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/pipe_reg_en.v:3]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pipe_reg_en__parameterized0' (0#1) [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/pipe_reg_en.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ID_pipe_stage' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/ID_pipe_stage.v:4]
+INFO: [Synth 8-6157] synthesizing module 'sign_extend' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/sign_extend.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'sign_extend' (0#1) [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/sign_extend.v:4]
+INFO: [Synth 8-6157] synthesizing module 'control' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/control.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/control.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'control' (0#1) [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/control.v:4]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mux.v:3]
+	Parameter mux_width bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (0#1) [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mux.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized1' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mux.v:3]
+	Parameter mux_width bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized1' (0#1) [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mux.v:3]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/register_file.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (0#1) [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/register_file.v:4]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized2' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mux.v:3]
+	Parameter mux_width bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized2' (0#1) [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mux.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ID_pipe_stage' (0#1) [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/ID_pipe_stage.v:4]
+WARNING: [Synth 8-7071] port 'jump' of module 'ID_pipe_stage' is unconnected for instance 'ID' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mips_32.v:99]
+WARNING: [Synth 8-7023] instance 'ID' of module 'ID_pipe_stage' has 23 connections declared, but only 22 given [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mips_32.v:99]
+INFO: [Synth 8-6157] synthesizing module 'pipe_reg' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/pipe_reg.v:4]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pipe_reg' (0#1) [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/pipe_reg.v:4]
+INFO: [Synth 8-6157] synthesizing module 'pipe_reg__parameterized0' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/pipe_reg.v:4]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pipe_reg__parameterized0' (0#1) [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/pipe_reg.v:4]
+INFO: [Synth 8-6157] synthesizing module 'pipe_reg__parameterized1' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/pipe_reg.v:4]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pipe_reg__parameterized1' (0#1) [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/pipe_reg.v:4]
+INFO: [Synth 8-6157] synthesizing module 'pipe_reg__parameterized2' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/pipe_reg.v:4]
+	Parameter WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pipe_reg__parameterized2' (0#1) [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/pipe_reg.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Hazard_detection' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/Hazard_detection.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Hazard_detection' (0#1) [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/Hazard_detection.v:4]
+INFO: [Synth 8-6157] synthesizing module 'EX_pipe_stage' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/EX_pipe_stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALUControl' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/ALUControl.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'ALUControl' (0#1) [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/ALUControl.v:4]
+INFO: [Synth 8-6157] synthesizing module 'mux4' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mux4.v:4]
+	Parameter mux_width bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux4' (0#1) [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mux4.v:4]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized3' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mux.v:3]
+	Parameter mux_width bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized3' (0#1) [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mux.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/ALU.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/ALU.v:4]
+WARNING: [Synth 8-7071] port 'zero' of module 'ALU' is unconnected for instance 'ALUunit' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/EX_pipe_stage.v:47]
+WARNING: [Synth 8-7023] instance 'ALUunit' of module 'ALU' has 5 connections declared, but only 4 given [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/EX_pipe_stage.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'EX_pipe_stage' (0#1) [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/EX_pipe_stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'EX_Forwarding_unit' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/EX_Forwarding_unit.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'EX_Forwarding_unit' (0#1) [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/EX_Forwarding_unit.v:4]
+INFO: [Synth 8-6157] synthesizing module 'data_memory' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/data_memory.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'data_memory' (0#1) [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/data_memory.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'mips_32' (0#1) [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mips_32.v:4]
+WARNING: [Synth 8-3848] Net id_ex_instr_rs in module/entity mips_32 does not have driver. [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mips_32.v:53]
+WARNING: [Synth 8-3848] Net id_ex_instr_rt in module/entity mips_32 does not have driver. [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mips_32.v:53]
+WARNING: [Synth 8-3848] Net mem_wb_write in module/entity mips_32 does not have driver. [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mips_32.v:193]
+WARNING: [Synth 8-3848] Net jump in module/entity mips_32 does not have driver. [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/mips_32.v:13]
+WARNING: [Synth 8-7129] Port mem_access_addr[31] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[30] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[29] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[28] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[27] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[26] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[25] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[24] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[23] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[22] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[21] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[20] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[19] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[18] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[17] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[16] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[15] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[14] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[13] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[12] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[11] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[10] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[1] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[0] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_instr[31] in module EX_pipe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_instr[30] in module EX_pipe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_instr[29] in module EX_pipe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_instr[28] in module EX_pipe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_instr[27] in module EX_pipe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_instr[26] in module EX_pipe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_instr[25] in module EX_pipe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_instr[24] in module EX_pipe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_instr[23] in module EX_pipe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_instr[22] in module EX_pipe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_instr[21] in module EX_pipe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_instr[20] in module EX_pipe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_instr[19] in module EX_pipe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_instr[18] in module EX_pipe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_instr[17] in module EX_pipe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_instr[16] in module EX_pipe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_instr[15] in module EX_pipe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_instr[14] in module EX_pipe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_instr[13] in module EX_pipe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_instr[12] in module EX_pipe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_instr[11] in module EX_pipe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_instr[10] in module EX_pipe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_instr[9] in module EX_pipe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_instr[8] in module EX_pipe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_instr[7] in module EX_pipe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_instr[6] in module EX_pipe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port read_addr[1] in module instruction_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port read_addr[0] in module instruction_mem is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1365.016 ; gain = 506.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1365.016 ; gain = 506.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1365.016 ; gain = 506.246
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1365.016 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Andy/project_1/project_1.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [C:/Users/Andy/project_1/project_1.srcs/constrs_1/new/constraints.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1473.633 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1473.633 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1473.633 ; gain = 614.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1473.633 ; gain = 614.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1473.633 ; gain = 614.863
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'reg_dst_reg' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/control.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_to_reg_reg' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/control.v:17]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_op_reg' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/control.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_write_reg' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/control.v:20]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_src_reg' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/control.v:21]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_write_reg' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/control.v:22]
+WARNING: [Synth 8-327] inferring latch for variable 'branch_reg' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/control.v:23]
+WARNING: [Synth 8-327] inferring latch for variable 'jump_reg' [C:/Users/Andy/project_1/project_1.srcs/sources_1/imports/Lab4_file_uploaded 3/control.v:24]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1473.633 ; gain = 614.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 42    
+	               10 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Multipliers : 
+	              32x32  Multipliers := 1     
++---Muxes : 
+	  66 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 10    
+	  33 Input   32 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 3     
+	   2 Input    5 Bit        Muxes := 1     
+	  16 Input    4 Bit        Muxes := 1     
+	   9 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 39    
+	   9 Input    1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP alu_result0, operation Mode is: A*B.
+DSP Report: operator alu_result0 is absorbed into DSP alu_result0.
+DSP Report: operator alu_result0 is absorbed into DSP alu_result0.
+DSP Report: Generating DSP alu_result0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator alu_result0 is absorbed into DSP alu_result0.
+DSP Report: operator alu_result0 is absorbed into DSP alu_result0.
+DSP Report: Generating DSP alu_result0, operation Mode is: A*B.
+DSP Report: operator alu_result0 is absorbed into DSP alu_result0.
+DSP Report: operator alu_result0 is absorbed into DSP alu_result0.
+DSP Report: Generating DSP alu_result0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator alu_result0 is absorbed into DSP alu_result0.
+DSP Report: operator alu_result0 is absorbed into DSP alu_result0.
+WARNING: [Synth 8-3332] Sequential element (ID/controlUnit/jump_reg) is unused and will be removed from module mips_32.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1473.633 ; gain = 614.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object       | Inference | Size (Depth x Width) | Primitives      | 
++------------+------------------+-----------+----------------------+-----------------+
+|mips_32     | data_mem/ram_reg | Implied   | 256 x 32             | RAM256X1S x 32  | 
++------------+------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 1473.633 ; gain = 614.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1473.633 ; gain = 614.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object       | Inference | Size (Depth x Width) | Primitives      | 
++------------+------------------+-----------+----------------------+-----------------+
+|mips_32     | data_mem/ram_reg | Implied   | 256 x 32             | RAM256X1S x 32  | 
++------------+------------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1473.633 ; gain = 614.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1473.633 ; gain = 614.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1473.633 ; gain = 614.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1473.633 ; gain = 614.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1473.633 ; gain = 614.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1473.633 ; gain = 614.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1473.633 ; gain = 614.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B          | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | PCIN>>17+A*B | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY4    |   314|
+|3     |DSP48E1   |     3|
+|4     |LUT1      |     5|
+|5     |LUT2      |   127|
+|6     |LUT3      |   237|
+|7     |LUT4      |   117|
+|8     |LUT5      |  1032|
+|9     |LUT6      |   824|
+|10    |MUXF7     |   214|
+|11    |MUXF8     |    27|
+|12    |RAM256X1S |    32|
+|13    |FDCE      |   287|
+|14    |FDRE      |   992|
+|15    |LDC       |     7|
+|16    |LDP       |     1|
+|17    |IBUF      |     2|
+|18    |OBUF      |    32|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1473.633 ; gain = 614.863
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:37 . Memory (MB): peak = 1473.633 ; gain = 506.246
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1473.633 ; gain = 614.863
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1473.633 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 598 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1473.633 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 40 instances were transformed.
+  LDC => LDCE: 7 instances
+  LDP => LDPE: 1 instance 
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 32 instances
+
+Synth Design complete | Checksum: 90aceace
+INFO: [Common 17-83] Releasing license: Synthesis
+68 Infos, 70 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:52 . Memory (MB): peak = 1473.633 ; gain = 1019.270
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Andy/project_1/project_1.runs/synth_1/mips_32.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mips_32_utilization_synth.rpt -pb mips_32_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  6 21:28:52 2023...
